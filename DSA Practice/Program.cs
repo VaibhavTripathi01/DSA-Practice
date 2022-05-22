@@ -4,7 +4,7 @@
 {
     class Program
     {
-
+        // Qu. 
         public static void Main(String[] Args)
         {
             Console.WriteLine("Inside Code");
