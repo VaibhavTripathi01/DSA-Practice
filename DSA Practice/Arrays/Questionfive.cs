@@ -60,12 +60,12 @@ namespace DSA_Practice.Arrays
             return min_diff;
         }
 
-        public static void Main(string[] args)
-        {
-        int[] array = {12, 4, 7, 9, 2, 23, 25, 41,30, 40, 28, 42, 30, 44, 48,43, 50};
-            int[] array2 = { 7, 3, 2, 4, 9, 12, 56 };
-        ChocolateDistributionProblem(array2, 3);
+        //public static void Main(string[] args)
+        //{
+        //int[] array = {12, 4, 7, 9, 2, 23, 25, 41,30, 40, 28, 42, 30, 44, 48,43, 50};
+        //    int[] array2 = { 7, 3, 2, 4, 9, 12, 56 };
+        //ChocolateDistributionProblem(array2, 3);
 
-        }
+        //}
     }
 }
