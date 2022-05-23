@@ -40,11 +40,11 @@ namespace DSA_Practice.Arrays
 
             return maxValue;
         }
-        public static void Main(string[] Args)
-        {
-            int[] inputArray = {-2,-1,3,100};
-            Console.Write(MaxSubArray(inputArray));
-        }
+        //public static void Main(string[] Args)
+        //{
+        //    int[] inputArray = {-2,-1,3,100};
+        //    Console.Write(MaxSubArray(inputArray));
+        //}
 
     }
 }
