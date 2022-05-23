@@ -44,14 +44,14 @@ namespace DSA_Practice
 
 
 
-        public static void Main(string[] args)
-        {
-            int[] inputArray = { 0, 1 };
-            ReverseSameArray(inputArray);
-            foreach (int item in ReverseArray(inputArray))
-            {
-                Console.WriteLine(item);
-            }
-        }
+        //public static void Main(string[] args)
+        //{
+        //    int[] inputArray = { 0, 1 };
+        //    ReverseSameArray(inputArray);
+        //    foreach (int item in ReverseArray(inputArray))
+        //    {
+        //        Console.WriteLine(item);
+        //    }
+        //}
     }
 }
