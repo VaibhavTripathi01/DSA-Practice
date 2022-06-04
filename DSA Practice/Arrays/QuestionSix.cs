@@ -86,17 +86,17 @@ namespace DSA_Practice.Arrays
             return BinarySearch(arr, pivot + 1, n - 1, key);
         }
 
-        public static void Main()
-        {
-            QuestionSix obj = new QuestionSix();
+        //public static void Main()
+        //{
+        //    QuestionSix obj = new QuestionSix();
 
-            // Let us search 3 in below array
-            int[] arr1 = { 5, 6, 7, 8, 9, 10, 1, 2, 3 };
-            int n = arr1.Length;
-            int key = 2;
-            Console.Write("Index of the element is : "
-                          + obj.SearchIndex(arr1, n, key));
-        }
+        //    // Let us search 3 in below array
+        //    int[] arr1 = { 5, 6, 7, 8, 9, 10, 1, 2, 3 };
+        //    int n = arr1.Length;
+        //    int key = 2;
+        //    Console.Write("Index of the element is : "
+        //                  + obj.SearchIndex(arr1, n, key));
+        //}
 
     }
 }
