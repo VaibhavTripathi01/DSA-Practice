@@ -50,12 +50,12 @@ namespace DSA_Practice.Strings
         }
 
 
-        public static void Main(string[] args)
-        {
-            string info = "00A man, a plan, a canal:00 Panama";
-            Console.WriteLine("Is string {0} palindrome {1}", info, palindromeChecker(info));
+        //public static void Main(string[] args)
+        //{
+        //    string info = "00A man, a plan, a canal:00 Panama";
+        //    Console.WriteLine("Is string {0} palindrome {1}", info, palindromeChecker(info));
             
             
-        }
+        //}
     }
 }
