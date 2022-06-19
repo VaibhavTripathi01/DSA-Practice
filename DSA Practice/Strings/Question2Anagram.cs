@@ -46,10 +46,10 @@ namespace DSA_Practice.Strings
             }
             return output;
         }
-        public static void Main()
-        {
-            Question2Anagram obj=new Question2Anagram();
-            Console.WriteLine("Check is anagram: "+obj.IsAnagram("kjsdbnf", "sdfsdf"));
-        }
+        //public static void Main()
+        //{
+        //    Question2Anagram obj=new Question2Anagram();
+        //    Console.WriteLine("Check is anagram: "+obj.IsAnagram("kjsdbnf", "sdfsdf"));
+        //}
     }
 }
