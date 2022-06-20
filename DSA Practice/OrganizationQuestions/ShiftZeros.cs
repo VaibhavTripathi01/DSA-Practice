@@ -64,11 +64,11 @@ namespace DSA_Practice.OrganizationQuestions
             
         }
 
-        public static void Main()
-        {
-            int[] array = { 1, 3, 4, 0, 7, 5, 0, 8 ,0};
-            ShiftZero(array);
-            Shifter(array);
-        }
+        //public static void Main()
+        //{
+        //    int[] array = { 1, 3, 4, 0, 7, 5, 0, 8 ,0};
+        //    ShiftZero(array);
+        //    Shifter(array);
+        //}
     }
 }
