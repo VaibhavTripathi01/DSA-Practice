@@ -29,11 +29,11 @@ namespace DSA_Practice.OrganizationQuestions
             }
         }
 
-        public static void Main()
-        {
-            int[] array = { 1, 2, 3, 2, 3, 2, 3, 2, 3 };
-            PrintDupl(array);
-        }
+        //public static void Main()
+        //{
+        //    int[] array = { 1, 2, 3, 2, 3, 2, 3, 2, 3 };
+        //    PrintDupl(array);
+        //}
     }
 }
 //HashSet<int> set=new HashSet<int>();
