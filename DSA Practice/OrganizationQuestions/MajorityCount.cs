@@ -8,41 +8,47 @@ namespace DSA_Practice.OrganizationQuestions
 {
      class MajorityCount
     {
-        public static int Majority(int[] array)
+        public int majorityElement(int[] a, int size)
         {
-            int n = array.Length;
-            int maxCount = 0;
-            int value = 0;
-            for(int i=0;i<n;i++)
+            //code here
+            int majorityElement = 0;
+            int majorityElemCount = 0;
+            for (int i = 0; i < size; i++)
             {
-                int checkElement = array[i];
-                int elementCount = 0;
-                for(int j=0;j<n;j++)
+                int initialNumber = a[i];
+                int count = 0;
+                for (int j = 0; j < size; j++)
                 {
-                    if (checkElement == array[j])
+                    if (a[i] == a[j])
                     {
-                        elementCount++;
+                        count++;
+
                     }
                 }
-                if(elementCount>n/2)
+                if (count > majorityElemCount)
                 {
-                    maxCount = elementCount;
-                    value = checkElement;
+                    majorityElemCount = count;
+                    majorityElement = a[i];
                 }
             }
-            if(maxCount>0)
+
+            if (majorityElemCount > size / 2)
             {
-                Console.WriteLine("Max Count is",maxCount);
+                return majorityElement;
             }
 
+            else
+            {
+                return -1;
+            }
 
-            return value;
         }
+
         //public static void Main()
         //{
         //    int[] array = { 0, 1, 2, 3, 4, 3, 2, 3 };
         //    int count = Majority(array);
         //    Console.WriteLine(count);
         //}
-     }
+    }
 }

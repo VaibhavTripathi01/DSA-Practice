@@ -29,7 +29,7 @@ namespace DSA_Practice.OrganizationQuestions
                     
                    
                 }
-                i --;
+                i--;
                
                
                 result+=strArray[i].ToString()+countOccurance.ToString();
@@ -40,9 +40,9 @@ namespace DSA_Practice.OrganizationQuestions
             return result;
         }
 
-        public static void Main()
-        {
-            string result=CheckFrequency("abbbbccccddddfffghj");
-        }
+        //public static void Main()
+        //{
+        //    string result=CheckFrequency("abbbbccccddddfffghj");
+        //}
     }
 }
