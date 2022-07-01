@@ -8,14 +8,21 @@ namespace DSA_Practice.Concepts.Recursion
 {
      class Palindrome
     {
-        public static void CheckPalindrome(string str)
+        public static bool CheckPalindromes(string str,int start,int end)
         {
+            if(start>=end)
+            {
+                return true;
+            }
+            
+            return (str[start]==str[end] && CheckPalindromes(str, start + 1, end - 1));
 
         }
 
-        //public static void Main()
-        //{
-
-        //}
+        public static void Main()
+        {
+            bool test=CheckPalindromes("abccha", 0, 5);
+            Console.WriteLine(test); 
+        }
     }
 }

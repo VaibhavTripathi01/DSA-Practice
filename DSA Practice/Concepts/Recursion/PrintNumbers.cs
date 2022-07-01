@@ -27,11 +27,28 @@ namespace DSA_Practice.Concepts.Recursion
             }
             return n + Sum(n - 1);
         }
+
+        public static int PrinttNumbers(int n,int sum)
+        {
+            if(n==0)
+            {
+                return sum;
+            }          
+            sum += n;
+           return PrinttNumbers(n - 1,sum);
+             
+        }
+
         //public static void Main()
         //{
-        //   // PrintData(5);
-        //    int result = Sum(5);
-        //    Console.WriteLine(result);
-        //}
+        //    // PrintData(5);
+        //    //int result = Sum(5);
+        //    //Console.WriteLine(result);
+        //    int sum=PrinttNumbers(4,0);
+        //    Console.WriteLine(sum);
+        //}                                                                
+
+              
+
     }
 }

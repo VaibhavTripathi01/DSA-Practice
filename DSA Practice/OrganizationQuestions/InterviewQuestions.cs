@@ -128,15 +128,15 @@ namespace DSA_Practice.OrganizationQuestions
             return str.ToUpper();
         }
 
-        public static void Main()
-        {
-            int[] array = { 1, 2, 3, 44, 100, 21, 32, 200 };
-            //maxTimes("jksdhkjsKkkkkk");
-            //perfectSquare(55);
-            //sumofmax(array);
-            ConvertUpper("i want to stay at a safe distance from KK");
+        //public static void Main()
+        //{
+        //    int[] array = { 1, 2, 3, 44, 100, 21, 32, 200 };
+        //    //maxTimes("jksdhkjsKkkkkk");
+        //    //perfectSquare(55);
+        //    //sumofmax(array);
+        //    ConvertUpper("i want to stay at a safe distance from KK");
 
-        }
+        //}
 
 
     }
