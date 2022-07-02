@@ -19,10 +19,19 @@ namespace DSA_Practice.Concepts.Recursion
 
         }
 
-        public static void Main()
+        //public static void Main()
+        //{
+        //    bool test = Recurspal("abccca", 0, 5);
+        //    Console.WriteLine(test);
+        //}
+
+        public static bool Recurspal(string s,int start,int end)
         {
-            bool test=CheckPalindromes("abccha", 0, 5);
-            Console.WriteLine(test); 
+            if(start>=end)
+            {
+                return true;
+            }
+            return ((s[start] == s[end]) && Recurspal(s, start + 1, end - 1));
         }
     }
 }

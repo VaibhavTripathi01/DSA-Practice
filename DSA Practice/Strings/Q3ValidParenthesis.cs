@@ -56,6 +56,39 @@ namespace DSA_Practice.Strings
             }
             return false;
         }
+
+        public bool CheckBalanced(string str)
+        {
+            int smallBracketsCount = 0;
+            int middleBracketsCount = 0;
+            int squareBracketCount = 0;
+
+            char[] strArr = str.ToCharArray();
+            int checkIndex = -1;
+            for(int i=0;i<strArr.Length;i++)
+            {
+                if (strArr[i]==')' || strArr[i]==']' || strArr[i]=='}')
+                {
+                    if(i==0)
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        checkIndex = i;
+                    }
+                }
+                if(checkIndex>0)
+                {
+
+                }
+            }
+            
+           
+
+            return false;
+        }
+
         //public static void Main()
         //{
         //    Console.WriteLine(IsValidClose("[{{}}]"));
