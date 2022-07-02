@@ -39,16 +39,21 @@ namespace DSA_Practice.Concepts.Recursion
              
         }
 
+        
+
+
+
         //public static void Main()
         //{
-        //    // PrintData(5);
-        //    //int result = Sum(5);
-        //    //Console.WriteLine(result);
-        //    int sum=PrinttNumbers(4,0);
-        //    Console.WriteLine(sum);
-        //}                                                                
+            // PrintData(5);
+            //int result = Sum(5);
+            //Console.WriteLine(result);
+            //int sum = PrinttNumbers(4, 0);
+            //Console.WriteLine(sum);
+           
+        //}
+    
 
-              
 
     }
 }

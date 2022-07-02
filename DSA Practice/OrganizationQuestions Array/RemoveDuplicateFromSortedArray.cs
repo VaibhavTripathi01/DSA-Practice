@@ -44,6 +44,8 @@ namespace DSA_Practice.OrganizationQuestions
             return array;
         }
 
+       // for
+
         //public static void Main()
         //{
         //    int[] array = { 1,1,1, 2, 3, 4, 4, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 7,7 };

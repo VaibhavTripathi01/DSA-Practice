@@ -23,10 +23,29 @@ namespace DSA_Practice.OrganizationQuestions
 
             return array;
         }
+
+        public static int[] LetsRotate(int[] array,int times)
+        {
+            for(int i=0;i<times;i++)
+            {
+                for(int j=0;j<array.Length-1;j++)
+                {
+                    int temp = array[j];
+                    array[j] = array[j+1];
+                    array[j+1]= temp;
+
+                }
+            }
+            
+            return array;
+        }
+
+
+
         //public static void Main()
         //{
         //    int[] array = { 1, 2, 3, 4, 5, 6, 7 };
-        //    LeftRotator(array, 4);
+        //    LetsRotate(array, 4);
 
         //}
     }
