@@ -10,23 +10,55 @@ namespace DSA_Practice.Searching_Algos
     {
         public static int BinarySearchAlgo(int[] array,int key)
         {
-            //int middle = array.Length / 2;
-            int min = 0;
-            int max = array.Length - 1;
-
-            while(min<=max)
+            int start = 0;
+            int high = array.Length- 1;
+            while(start<=high)
             {
-                int mid = (min + max) / 2;
-                if (key == array[mid])
+                int middle = (high+start) / 2;
+                if (array[middle]==key)
                 {
-                    return mid+1;
+                    return middle;
                 }
-               // else if (key < array[])
-
+                if (key < array[middle])
+                {
+                    high = middle-1;
+                }
+                else if(array[middle]<key)
+                {
+                    start = middle+1;
+                }
             }
 
-            return 0;
+            return -1;
+
+
         }
+
+        public static int BinarySearchRecursive(int[] arr, int key,int low,int high)
+        {
+            int middle = (low + high) / 2;
+            if (arr[middle] ==key)
+            {
+                return (middle);
+            }
+            if(arr[middle] >key)
+            {
+                high = (middle) - 1;
+            }
+            else if(arr[middle] < key)
+            {
+                low = (middle) + 1;
+            }
+            return BinarySearchRecursive(arr, key, low, high);
+        }
+
+
+        //public static void Main()
+        //{
+        //    int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        //    //BinarySearchAlgo(array, 13);
+        //    int result=BinarySearchRecursive(array, 3, 0, array.Length-1);
+        //}
 
 
 

@@ -48,13 +48,13 @@ namespace DSA_Practice.OrganizationQuestions_Array
       
 
 
-        public static void Main()
-        {
-           // int [] arr = {7,10,4,3,6,5,2};
-           // int[] arr = { 10,20,30 };
-            int[] arr = { 30,20,10 };
-            Leaders(arr);
-        }
+        //public static void Main()
+        //{
+        //   // int [] arr = {7,10,4,3,6,5,2};
+        //   // int[] arr = { 10,20,30 };
+        //    int[] arr = { 30,20,10 };
+        //    Leaders(arr);
+        //}
 
 
     }
