@@ -13,6 +13,7 @@ namespace DSA_Practice.OrganizationQuestions
             //convert string to char array
             //jksd_data_slkdjfh
             char[] arr = data.ToCharArray();
+            //Array.Copy(arr);
             int[] locations=new int[arr.Length];
             string result = "";
             int count = 0;
