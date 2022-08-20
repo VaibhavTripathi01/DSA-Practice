@@ -8,7 +8,7 @@ namespace DSA_Practice.LinkedList
 {
     public class Node
     {
-        int data;
+        public int data;
         public Node next;
 
         //Created Node 
@@ -47,21 +47,43 @@ namespace DSA_Practice.LinkedList
             return head;
         }
 
-        public static void Main()
+        public static Node DeleteFirstNode(Node head)
         {
-            Node head = null;
-           
-            head= InsertAtBeginning(head,40);
-            head = InsertAtBeginning(head, 30);
-
-            head = InsertAtBeginning(head, 20); 
-            head = InsertAtBeginning(head, 10);
-            head = InsertAtLast(head, 1000);
-            head = InsertAtBeginning(head, 20);
-            head = InsertAtBeginning(head, 10);
-
-            Console.Write(head);
+            return head.next;
         }
+
+        public static Node DeleteLastNode(Node head)
+        {
+            if(head==null)
+            {
+                return head;
+            }
+            else
+            {
+                Node curr = head;
+                while(curr.next.next!=null)
+                {
+                    curr= curr.next;
+                }
+                curr.next = null;
+            }
+            return head;
+        }
+
+
+
+        //public static void Main()
+        //{
+        //    Node head = null;
+           
+        //    head= InsertAtBeginning(head,40);
+        //    head = InsertAtBeginning(head, 30);
+        //    head = InsertAtLast(head, 1000);
+        //    head = InsertAtBeginning(head, 20);
+        //    head = InsertAtBeginning(head, 10);
+        //    head = DeleteLastNode(head);
+        //    Console.Write(head);
+        //}
 
     }
 
